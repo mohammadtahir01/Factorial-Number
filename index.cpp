@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int n,fact=1;
+    int n;
+    int sum=1;
     cout<<"Enter the number:";
     cin>>n;
-    while(n>0){
-        fact=fact*n;
-        n=n-1;
+    for(int i=1; i<=n; ++i){
+        sum=sum*i;
     }
-     cout<<fact;
+     cout<<sum;
      return 0;
 }
